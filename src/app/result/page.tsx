@@ -39,7 +39,7 @@ const isInBetween = (val: number, on: number, offset: number = 3) => {
   return val <= on + offset && val >= on - offset;
 };
 
-export default function page() {
+export default function Page() {
   const [response, setResponse] = useState<ParsedResult | null>(null);
 
   useEffect(() => {
