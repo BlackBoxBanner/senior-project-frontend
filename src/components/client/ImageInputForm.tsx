@@ -49,7 +49,7 @@ export default function ImageInputForm() {
   );
 
   const handleFetch = async (formData: FormData) => {
-    const res = await fetch("http://127.0.0.1:5000/upload", {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/upload`, {
       method: "POST",
       body: formData,
     });
